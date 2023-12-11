@@ -37,16 +37,4 @@ document.getElementById("update-btn").addEventListener("click", function () {
 });
 
 
-// const title = document.getElementById("comment-title");
-// title.style.textAlign = "center";
 
-// document.getElementById("post-btn").addEventListener("click", function () {
-//   const commentText = document.getElementById("comment-input");
-//   const findComment = commentText.value;
-
-//   const commentContainer = document.getElementById("comment-container");
-//   const p = document.createElement("p");
-//   p.innerText = findComment;
-//   commentContainer.appendChild(p);
-//   commentText.value = "";
-// });
