@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Dekegate </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Event Delegate List Items</h1>
+        <ul id="list-container">
+            <li class="item">Lorem, ipsum dolor.</li>
+            <li class="item">Maxime, dolor illum.</li>
+            <li class="item">Numquam, quis qui.</li>
+            <li class="item">Repellendus, eius rerum.</li>
+            <li class="item">Eveniet, placeat libero!</li>
+        </ul>
+        <button id="add-btn">Add new item</button>
+    </div>
+    <script>
+        // const items = document.getElementsByClassName('item')
+        // for (const item of items) {
+        //     item.addEventListener('click', function (event) {
+        //         event.target.parentNode.removeChild(event.target)
+
+        //     })
+        // }
+
+        const item = document.getElementById('list-container')
+        item.addEventListener('click', function (event) {
+            event.target.parentNode.removeChild(event.target)
+
+
+        })
+        document.getElementById('add-btn').addEventListener('click', function () {
+            const mainContainer = document.getElementById('list-container')
+            const addList = document.createElement('li')
+            addList.innerText = 'Brand New List Added'
+            mainContainer.appendChild(addList)
+
+        })
+
+    </script>
+</body>
+
+</html>

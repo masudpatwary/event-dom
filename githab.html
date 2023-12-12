@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Secret Info</title>
+</head>
+
+<body>
+    <h1 id="sicret-info">The Scret Info</h1>
+    <input id="delete-confirm" placeholder="Please type to delete" type="text">
+    <button disabled id="btn-delete">delete</button>
+    <script>
+
+        // *** first time 
+
+        // document.getElementById('delete-confirm').addEventListener('keyup', function (event) {
+        //     const text = event.target.value
+        //     const deleteBtn = document.getElementById('btn-delete')
+        //     if (text === 'delete') {
+        //         deleteBtn.removeAttribute('disabled')
+        //     }
+        //     else {
+        //         deleteBtn.setAttribute('disabled', true)
+        //     }
+
+        // })
+        // document.getElementById('btn-delete').addEventListener('click', function () {
+        //     const sicret = document.getElementById('sicret-info');
+        //     sicret.style.display = 'none';
+
+        // })
+
+        //  second time 
+
+        // document.getElementById('delete-confirm').addEventListener('keyup', function (event) {
+        //     const text = event.target.value
+        //     const deletebtn = document.getElementById('btn-delete')
+        //     if (text === 'delete') {
+        //         deletebtn.removeAttribute('disabled')
+
+        //     }
+        //     else {
+        //         deletebtn.setAttribute('disabled', true)
+        //     }
+        // })
+
+        // document.getElementById('btn-delete').addEventListener('click', function () {
+        //     const sicret = document.getElementById('sicret-info')
+        //     sicret.style.display = 'none'
+        // })
+
+
+        // third time
+
+        document.getElementById('delete-confirm').addEventListener('keyup', function (event) {
+            const text = event.target.value
+            const deletebtn = document.getElementById('btn-delete')
+            if (text === 'delete') {
+                deletebtn.removeAttribute('disabled')
+
+            }
+            else {
+                deletebtn.setAttribute('disabled', true)
+            }
+
+        })
+
+        document.getElementById('btn-delete').addEventListener('click', function () {
+            const sicret = document.getElementById('sicret-info')
+            sicret.style.display = 'none'
+
+        })
+    </script>
+</body>
+
+</html>
